@@ -52,10 +52,19 @@ public class StringHelper {
     }
 
 
-    public static void main(String[] args) {
-        String str = "aaabbbcccdddeeefff";
-        String s = markString(str, "*", 1,4);
-        System.out.println("s = " + s);
+    /**
+     * 判断字符串是否空，如果为true则为空
+     *
+     * @param str 字符串
+     * @return true/false
+     */
+
+    public static boolean isEmpty(String str) {
+        if (str == null || str.trim().length() == 0) {
+            return true;
+        }
+        return false;
     }
+
 
 }
